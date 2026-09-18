@@ -1,0 +1,13 @@
+# Normaliza los finales de línea al guardar en el repositorio.
+# Sin esto, un editor que guarde con finales de Windows hace que Git vea
+# el archivo entero como modificado, en vez de las líneas que cambiaron.
+* text=auto eol=lf
+
+# Archivos binarios: Git no debe intentar normalizarlos
+*.webp binary
+*.jpg  binary
+*.png  binary
+*.ico  binary
+
+# Los SVG son texto
+*.svg text eol=lf

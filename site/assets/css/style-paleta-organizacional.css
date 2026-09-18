@@ -1,0 +1,157 @@
+/* ==========================================================
+   CSS de la PÁGINA ÍNDICE (site/index.html)
+   - Variables con nombres FUNCIONALES (no atados a un color)
+   - Comentarios pedagógicos
+   ========================================================== */
+
+/* =============  Variables de tema (índice)  ============= */
+/* Si quieres cambiar apariencia global del índice, ajusta aquí */
+:root {
+  /* Colores de superficie y fondo (adaptado a paleta UTP/FISC morado/verde) */
+  --color-surface: #ffffff;      /* tarjetas, contenedores  → (card) */
+  --color-bg-weak: #F9F7FB;      /* fondo suave 1 (gradiente)  ← bg-50 */
+  --color-bg-soft: #EAE4F1;      /* fondo suave 2 (gradiente)  ← bg-100 */
+  --color-bg-accent-a: #EBF1E5;  /* realce suave A en el fondo ← bg-aqua-100 */
+  --color-bg-accent-b: #E9E6F1;  /* realce suave B en el fondo ← bg-indigo-100 */
+
+  /* Tipografía */
+  --color-text: #1A0F2B;         /* texto principal            ← ink-900 */
+  --color-text-muted: #391F4A;   /* texto secundario           ← ink-700 */
+
+  /* Interacción (enlaces, títulos, acentos) */
+  --color-brand: #59367F;        /* color de marca principal   ← brand-500 */
+  --color-brand-strong: #482A65; /* hover/activos              ← brand-600 */
+  --color-brand-title: #391F4A;  /* títulos/secciones          ← brand-700 */
+  --color-accent-1: #59367f;     /* acento secundario (UTP morado) */
+  --color-accent-2: #2fa46f;     /* acento secundario (FISC verde) */
+
+  /* Bordes, sombras y radios (se mantienen) */
+  --border-soft: rgba(58, 141, 154, 0.18);
+  --radius-card: 1.25rem;
+  --radius-md: 0.9rem;
+  --radius-sm: 0.6rem;
+
+  --shadow-card: 0 10px 25px rgba(2, 6, 23, .08), 0 2px 6px rgba(2, 6, 23, .04);
+  --shadow-float: 0 8px 18px rgba(2, 6, 23, .08);
+}
+
+/* =============  Reset/tipografía básica (índice)  ============= */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: var(--color-text);
+  /* Fondo con gradientes suaves usando variables funcionales */
+  background:
+    radial-gradient(1200px 600px at 10% -10%, var(--color-bg-soft), transparent 60%),
+    radial-gradient(1000px 500px at 110% 10%, var(--color-bg-accent-a), transparent 60%),
+    linear-gradient(180deg, var(--color-bg-weak), var(--color-bg-accent-b) 60%, var(--color-bg-accent-b));
+}
+
+/* Enlace de salto (accesibilidad) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px; height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem; top: 1rem;
+  width: auto; height: auto;
+  padding: .5rem .75rem;
+  background: var(--color-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-float);
+}
+
+/* =============  Layout principal (índice)  ============= */
+.container {
+  max-width: 980px;
+  margin: 6rem auto;
+  padding: clamp(1.25rem, 2vw, 2rem);
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(2, 6, 23, .04);
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--border-soft);
+}
+.titulos { flex: 1 1 auto; }
+.titulos h1 {
+  margin: 0 0 .25rem 0;
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: .2px;
+}
+.sub {
+  margin: .15rem 0;
+  color: var(--color-text-muted);
+  font-size: clamp(.95rem, 1.6vw, 1.05rem);
+}
+
+.logos { display: flex; gap: 1rem; align-items: center; }
+.logo  { width: clamp(60px, 10vw, 90px); height: auto; filter: drop-shadow(0 2px 6px rgba(2,6,23,.1)); border-radius: .3rem; }
+
+/* Sección del curso/lista */
+.curso { padding-top: 1.25rem; }
+.curso h2 { margin: 1rem 0 .25rem; font-size: clamp(1.35rem, 2.2vw, 1.6rem); color: var(--color-brand-title); }
+.curso h3 { margin: 0 0 .9rem; font-size: clamp(1.05rem, 1.8vw, 1.2rem); color: var(--color-brand-strong); font-weight: 600; }
+
+.lista-estudiantes { margin: 0; padding-left: 1.25rem; }
+.lista-estudiantes li {
+  margin: .35rem 0;
+  padding: .5rem .75rem;
+  background: linear-gradient(180deg, #ffffff, var(--color-bg-weak));
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  list-style: decimal;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.lista-estudiantes li:hover { transform: translateY(-1px); box-shadow: var(--shadow-float); }
+
+.enlace-estudiante {
+  color: var(--color-accent-1);            /* ENLACE normal (morado UTP) */
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(89, 54, 127, .35);
+  transition: border-color .15s ease, color .15s ease;
+}
+.enlace-estudiante:hover {
+  color: var(--color-brand-strong);        /* ENLACE hover (morado más oscuro) */
+  border-bottom-color: var(--color-brand);
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(58, 141, 154, .20);
+  color: var(--color-text-muted);
+  font-size: .95rem;
+  line-height: 1.5;
+  letter-spacing: .15px;
+}
+.footer small { display: block; }
+.footer .sep { margin: 0 .35rem; color: rgba(44, 62, 80, .6); }
+.accent-course { color: var(--color-accent-2); font-weight: 600; }
+.accent-prof  { color: var(--color-accent-1); font-weight: 500; }
+
+/* Responsive (índice) */
+@media (max-width: 700px) {
+  .container { margin: 2rem 1rem; }
+  .header { flex-direction: column; align-items: center; text-align: center; }
+  .logos { justify-content: center; gap: 1.5rem; margin-top: .5rem; }
+  .logo { width: clamp(70px, 15vw, 100px); }
+}

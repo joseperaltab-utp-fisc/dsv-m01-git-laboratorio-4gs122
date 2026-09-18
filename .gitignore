@@ -1,0 +1,20 @@
+# Configuración del editor
+.vscode/
+*.code-workspace
+
+# Dependencias
+node_modules/
+
+# Compilados de producción
+dist/
+build/
+
+# Variables de entorno y secretos
+.env
+.env.local
+
+# Archivos del sistema operativo
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
