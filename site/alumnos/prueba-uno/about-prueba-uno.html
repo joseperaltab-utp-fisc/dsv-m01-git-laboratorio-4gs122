@@ -1,0 +1,228 @@
+<!-- file: site/alumnos/apellidos-nombre/about-apellidos-nombre.html -->
+<!--
+  PLANTILLA DE PERFIL — HTML
+  ──────────────────────────────────────────────────────────────
+  ESTA ES LA PLANTILLA. No la edites: copia la carpeta completa
+  site/alumnos/apellidos-nombre/ y renómbrala con tus datos.
+
+  Qué editar en tu copia:
+    • Este comentario de la primera línea (la ruta debe ser la tuya).
+    • El <title> y el <link> a tu hoja de estilos.
+    • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
+    • Las cuatro rutas de la fotografía (src y srcset).
+  Qué NO cambiar:
+    • Estructura (header / aside / main / footer).
+    • Rutas a los logos institucionales (../../assets/img/).
+
+  Nombres de archivo de tu copia, si te llamas Juan Pérez:
+    about-perez-juan.html
+    assets/css/about-perez-juan.css
+    assets/img/foto-perez-juan-{160,320,480,640}.webp
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nombre Apellidos — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-prueba-uno.css" />
+
+    <!-- Descripción breve (práctica de metadatos/SEO) -->
+    <meta
+      name="description"
+      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+    <div class="page-grid">
+      <header class="header">
+        <div class="titulos">
+          <!-- Navegación mínima (breadcrumb). Puedes añadir más tabs si el profe lo pide -->
+          <div class="top-actions">
+            <nav class="tabs-left" aria-label="Navegación">
+              <a href="../../index.html" class="tab-link is-active">
+                <span class="ico" aria-hidden="true">&#8962;</span>
+                <span class="label">Inicio</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- EDITA: nombre y tagline -->
+          <h1 class="nombre">Prueba Uno</h1>
+          <p class="tagline">Título profesional o especialización</p>
+        </div>
+
+        <!-- Logos institucionales (no cambiar rutas) -->
+        <div class="logos">
+          <img
+            class="logo"
+            src="../../assets/img/logo-utp.svg"
+            alt="Logo UTP"
+          />
+          <img
+            class="logo"
+            src="../../assets/img/logo-fisc.svg"
+            alt="Logo FISC"
+          />
+        </div>
+      </header>
+
+      <!-- Columna izquierda (foto + contacto + habilidades) -->
+      <aside class="sidebar">
+        <figure class="perfil">
+          <img
+            src="./assets/img/foto-apellidos-nombre-480.webp"
+            srcset="
+              ./assets/img/foto-apellidos-nombre-160.webp 160w,
+              ./assets/img/foto-apellidos-nombre-320.webp 320w,
+              ./assets/img/foto-apellidos-nombre-480.webp 480w,
+              ./assets/img/foto-apellidos-nombre-640.webp 640w
+            "
+            sizes="(max-width: 700px) 128px, 160px"
+            alt="Nombre Apellidos, estudiante de LDGS UTP FISC Veraguas"
+            width="160"
+            height="160"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            Licenciatura en Desarrollo y Gestión de Software
+          </figcaption>
+        </figure>
+
+        <section class="contacto card">
+          <h2>Contacto</h2>
+          <ul class="lista-contacto">
+            <li>
+              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="{{LINKEDIN}}">LinkedIn</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="{{GITHUB}}">GitHub</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="{{PORTAFOLIO}}">Portafolio</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Añade o quita chips según tus tecnologías reales -->
+        <section class="skills card">
+          <h2>Habilidades</h2>
+
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+          </div>
+
+          <h3>Frameworks & Librerías</h3>
+          <div class="chips">
+            <span class="chip">Spring Boot</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+          </div>
+
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span class="chip">MySQL</span>
+            <span class="chip">PostgreSQL</span>
+          </div>
+
+          <h3>Herramientas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Postman</span>
+            <span class="chip">Figma</span>
+          </div>
+
+          <h3>Metodologías</h3>
+          <div class="chips">
+            <span class="chip">Scrum</span>
+            <span class="chip">Kanban</span>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna derecha (contenido principal) -->
+      <main class="contenido">
+        <section class="resumen card">
+          <h2>Acerca de mí</h2>
+          <p>{{RESUMEN_BREVE_ELEVATOR_PITCH}}</p>
+        </section>
+
+        <!-- Duplica <article.proyecto> por cada proyecto -->
+        <section class="proyectos card">
+          <h2>Proyectos destacados</h2>
+          <div class="proyectos-flex">
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>{{NOMBRE_PROYECTO}}</h3>
+                <div class="proyecto-links">
+                  <a target="_blank" rel="noopener" href="{{URL_GITHUB}}">Código</a>
+                  <a target="_blank" rel="noopener" href="{{URL_DEMO}}">Demo</a>
+                </div>
+              </header>
+              <p>{{DESCRIPCION_PROYECTO}}</p>
+              <p class="rol"><strong>Rol:</strong> {{ROL}}</p>
+              <p class="tech"><strong>Tecnologías:</strong> {{TECNOLOGIAS}}</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="experiencia card">
+          <h2>Experiencia</h2>
+          <ul class="timeline">
+            <li>
+              <div class="item">
+                <h3>{{CARGO}} — {{ORGANIZACION}}</h3>
+                <span class="meta">{{FECHA}}</span>
+                <p>{{RESPONSABILIDADES_LOGROS}}</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="educacion card">
+          <h2>Educación</h2>
+          <ul class="listado-simple">
+            <li>
+              <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
+              — UTP, Centro Regional de Veraguas ({{ANIO_INICIO}}–{{ANIO_FIN}})
+            </li>
+          </ul>
+        </section>
+
+        <section class="certificaciones card">
+          <h2>Certificaciones y Cursos</h2>
+          <ul class="listado-simple">
+            <li>{{CERTIFICACION_1}}</li>
+            <li>{{CURSO_1}}</li>
+          </ul>
+        </section>
+
+        <section class="extra card">
+          <h2>Logros · Artículos · Intereses</h2>
+          <ul class="listado-simple">
+            <li>{{LOGRO_O_ARTICULO}}</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>
+          © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+          · Lic. en Desarrollo y Gestión de Software
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
