@@ -1,0 +1,245 @@
+<!-- file: site/alumnos/maizon-yasir/about-maizon-yasir.html -->
+<!--
+  PLANTILLA DE PERFIL — HTML
+  ──────────────────────────────────────────────────────────────
+  ESTA ES LA PLANTILLA. No la edites: copia la carpeta completa
+  site/alumnos/apellidos-nombre/ y renómbrala con tus datos.
+
+  Qué editar en tu copia:
+    • Este comentario de la primera línea (la ruta debe ser la tuya).
+    • El <title> y el <link> a tu hoja de estilos.
+    • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
+    • Las cuatro rutas de la fotografía (src y srcset).
+  Qué NO cambiar:
+    • Estructura (header / aside / main / footer).
+    • Rutas a los logos institucionales (../../assets/img/).
+
+  Nombres de archivo de tu copia, si te llamas Juan Pérez:
+    about-perez-juan.html
+    assets/css/about-perez-juan.css
+    assets/img/foto-perez-juan-{160,320,480,640}.webp
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yasir Maizón — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-maizon-yasir.css" />
+
+    <!-- Descripción breve (práctica de metadatos/SEO) -->
+    <meta
+      name="description"
+      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+    <div class="page-grid">
+      <header class="header">
+        <div class="titulos">
+          <!-- Navegación mínima (breadcrumb). Puedes añadir más tabs si el profe lo pide -->
+          <div class="top-actions">
+            <nav class="tabs-left" aria-label="Navegación">
+              <a href="../../index.html" class="tab-link is-active">
+                <span class="ico" aria-hidden="true">&#8962;</span>
+                <span class="label">Inicio</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- EDITA: nombre y tagline -->
+          <h1 class="nombre">Yasir Maizón</h1>
+          <p class="tagline">Licenciatura en desarrollo y gestión de software</p>
+        </div>
+
+        <!-- Logos institucionales (no cambiar rutas) -->
+        <div class="logos">
+          <img
+            class="logo"
+            src="../../assets/img/logo-utp.svg"
+            alt="Logo UTP"
+          />
+          <img
+            class="logo"
+            src="../../assets/img/logo-fisc.svg"
+            alt="Logo FISC"
+          />
+        </div>
+      </header>
+
+      <!-- Columna izquierda (foto + contacto + habilidades) -->
+      <aside class="sidebar">
+        <figure class="perfil">
+          <img
+            src="./assets/img/foto-maizon-yasir-480.webp"
+            srcset="
+              ./assets/img/foto-maizon-yasir-160.webp 160w,
+              ./assets/img/foto-maizon-yasir-320.webp 320w,
+              ./assets/img/foto-maizon-yasir-480.webp 480w,
+              ./assets/img/foto-maizon-yasir-640.webp 640w
+            "
+            sizes="(max-width: 700px) 128px, 160px"
+            alt="Yasir Maizón, estudiante de LDGS UTP FISC Veraguas"
+            width="160"
+            height="160"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            Licenciatura en Desarrollo y Gestión de Software
+          </figcaption>
+        </figure>
+
+        <section class="contacto card">
+          <h2>Contacto</h2>
+          <ul class="lista-contacto">
+            <li>
+              <a href="mailto:yasir.maizon@utp.ac.pa">yasir.maizon@utp.ac.pa</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yasirmaizon">LinkedIn</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/Yasir-Maizon">GitHub</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="">Portafolio</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Añade o quita chips según tus tecnologías reales -->
+        <section class="skills card">
+          <h2>Habilidades</h2>
+
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">C++</span>
+            <span class="chip">SQL</span>
+          </div>
+
+          <!-- <h3>Frameworks & Librerías</h3>  
+          <div class="chips">
+            <span class="chip"></span>
+            <span class="chip"></span>
+            <span class="chip"></span>
+          </div> -->
+
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span class="chip">MySQL</span>
+            <span class="chip">SQL server</span>
+          </div>
+
+          <h3>Herramientas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Visual Studio Code</span>
+            <span class="chip">Figma</span>
+          </div>
+
+          <h3>Metodologías</h3>
+          <div class="chips">
+            <span class="chip">Scrum</span>
+            <span class="chip">Waterfall</span>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna derecha (contenido principal) -->
+      <main class="contenido">
+        <section class="resumen card">
+          <h2>Acerca de mí</h2>
+          <p>Soy estudiante de la Licenciatura en Desarrollo y Gestión de
+            Software en la UTP (FISC, Centro Regional de Veraguas). Me apasiona trabajar en diseño y programación
+            web enfocandome en priorizar la accesibilidad y la adaptabilidad.</p>
+        </section>
+
+        <!-- Duplica <article.proyecto> por cada proyecto -->
+        <section class="proyectos card">
+          <h2>Proyectos destacados</h2>
+          <div class="proyectos-flex">
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>Aplicación educativa</h3>
+                <div class="proyecto-links">
+                  <a target="_blank" rel="noopener" href="https://padlet.com/maizonyasir/mi-diseno-en-figma-od8p4swmtxgvs47p">Padlet</a>
+                  
+                </div>
+              </header>
+              <p>Se diseñó una aplicación móvil para estudiantes con el objetivo de crear una interfaz
+                que sea tranquila, que evitara la presión académica y fácil de entender para los estudiantes. 
+                Además de facilitar la entraga de asignaciones a distancia.
+              </p>
+              <p class="rol"><strong>Rol:</strong> Diseñador</p>
+              <p class="tech"><strong>Tecnologías:</strong>Figma</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="experiencia card">
+          <h2>Experiencia</h2>
+          <ul class="timeline">
+            <li>
+              <div class="item">
+                <h3>Técnico — Cable & Wireless</h3>
+                <span class="meta">Octubre - Diciembre 2024</span>
+                <p>Ofrecer servicio técnico a los usuarios, realizar reparaciones e instalaciones de fibra
+                  optica.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="educacion card">
+          <h2>Educación Media</h2>
+          <ul class="listado-simple">
+            <li>
+              <strong>Bachiller Industrial en Electrónica</strong>
+              — Instituto Profesional e Industrial de Aguadulce (IPTIA) (Marzo 2022 – Diciembre 2024)
+            </li>
+          </ul>
+        </section>
+        
+        <section class="educacion card">
+          <h2>Educación</h2>
+          <ul class="listado-simple">
+            <li>
+              <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
+              — UTP, Centro Regional de Veraguas (Enero 2025 – Diciembre 2029)
+            </li>
+          </ul>
+        </section>
+
+        <section class="certificaciones card">
+          <h2>Certificaciones y Cursos</h2>
+          <ul class="listado-simple">
+            <li>Curso de Html (Cognitive Class, 2025)</Html></li>
+            <li>Curso de diseño web adaptable (FreeCodeCamp, 2026)</li>
+          </ul>
+        </section>
+
+        <section class="extra card">
+          <h2>Logros · Artículos · Intereses</h2>
+          <ul class="listado-simple">
+            <li>Participación en el Congreso Internacional de Ciencias, Innovación y Tecnologías - COICIT 2025</li>
+            <li>Intereses: Ejecución musical, lectura y estudiar Aleman</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>
+          © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+          · Lic. en Desarrollo y Gestión de Software
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
