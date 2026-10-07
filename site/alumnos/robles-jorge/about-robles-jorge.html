@@ -1,0 +1,395 @@
+<!-- file: site/alumnos/apellidos-nombre/about-apellidos-nombre.html -->
+<!--
+  PLANTILLA DE PERFIL — HTML
+  ──────────────────────────────────────────────────────────────
+  ESTA ES LA PLANTILLA. No la edites: copia la carpeta completa
+  site/alumnos/apellidos-nombre/ y renómbrala con tus datos.
+
+  Qué editar en tu copia:
+    • Este comentario de la primera línea (la ruta debe ser la tuya).
+    • El <title> y el <link> a tu hoja de estilos.
+    • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
+    • Las cuatro rutas de la fotografía (src y srcset).
+  Qué NO cambiar:
+    • Estructura (header / aside / main / footer).
+    • Rutas a los logos institucionales (../../assets/img/).
+
+  Nombres de archivo de tu copia, si te llamas Juan Pérez:
+    about-perez-juan.html
+    assets/css/about-perez-juan.css
+    assets/img/foto-perez-juan-{160,320,480,640}.webp
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Jorge Robles — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-robles-jorge.css" />
+
+    <!-- Descripción breve -->
+    <meta
+        name="description"
+        content="Perfil de Jorge Robles, estudiante de la Licenciatura en Desarrollo y Gestión de Software de la UTP FISC Veraguas."
+    />
+</head>
+
+<body>
+
+    <div class="page-grid">
+
+        <!-- ENCABEZADO -->
+        <header class="header">
+
+            <div class="titulos">
+
+                <!-- Navegación -->
+                <div class="top-actions">
+
+                    <nav class="tabs-left" aria-label="Navegación">
+
+                        <a href="../../index.html" class="tab-link is-active">
+                            <span class="ico" aria-hidden="true">&#8962;</span>
+                            <span class="label">Inicio</span>
+                        </a>
+
+                    </nav>
+
+                </div>
+
+                <!-- Nombre y especialización -->
+                <h1 class="nombre">Jorge Robles</h1>
+
+                <p class="tagline">
+                    Estudiante de Licenciatura en Desarrollo y Gestión de Software
+                </p>
+
+            </div>
+
+            <!-- Logos institucionales -->
+            <div class="logos">
+
+                <img
+                    class="logo"
+                    src="../../assets/img/logo-utp.svg"
+                    alt="Logo UTP"
+                />
+
+                <img
+                    class="logo"
+                    src="../../assets/img/logo-fisc.svg"
+                    alt="Logo FISC"
+                />
+
+            </div>
+
+        </header>
+
+        <!-- COLUMNA IZQUIERDA -->
+        <aside class="sidebar">
+
+            <!-- FOTO DE PERFIL -->
+            <figure class="perfil">
+
+                <img
+                    src="./assets/img/robles-jorge.jpeg"
+                    alt="Jorge Robles, estudiante de LDGS UTP FISC Veraguas"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
+                />
+
+                <figcaption>
+                    Licenciatura en Desarrollo y Gestión de Software
+                </figcaption>
+
+            </figure>
+
+            <!-- CONTACTO -->
+            <section class="contacto card">
+
+                <h2>Contacto</h2>
+
+                <ul class="lista-contacto">
+
+                    <li>
+                        <a href="mailto:jorge.robles@utp.ac.pa">
+                            jorge.robles@utp.ac.pa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="TU_LINK_DE_LINKEDIN"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://github.com/Jorge-Robles99"
+                        >
+                            jorge-robles
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="TU_LINK_DE_PORTAFOLIO"
+                        >
+                            Portafolio
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <!-- HABILIDADES -->
+            <section class="skills card">
+
+                <h2>Habilidades</h2>
+
+                <h3>Lenguajes</h3>
+
+                <div class="chips">
+
+                    <span class="chip">Java</span>
+                    <span class="chip">C#</span>
+                    <span class="chip">C++</span>
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">SQL</span>
+
+                </div>
+
+                <h3>Bases de datos</h3>
+
+                <div class="chips">
+
+                    <span class="chip">MySQL</span>
+                    <span class="chip">MariaDB</span>
+
+                </div>
+
+                <h3>Herramientas</h3>
+
+                <div class="chips">
+
+                    <span class="chip">Git</span>
+                    <span class="chip">GitHub</span>
+                    <span class="chip">Visual Studio</span>
+                    <span class="chip">NetBeans</span>
+
+                </div>
+
+                <h3>Desarrollo</h3>
+
+                <div class="chips">
+
+                    <span class="chip">Java Swing</span>
+                    <span class="chip">Windows Forms</span>
+
+                </div>
+
+            </section>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="contenido">
+
+            <!-- RESUMEN -->
+            <section class="resumen card">
+
+                <h2>Acerca de mí</h2>
+
+                <p>
+                    Soy estudiante de la Licenciatura en Desarrollo y Gestión
+                    de Software de la Universidad Tecnológica de Panamá,
+                    Centro Regional de Veraguas. Me interesa el desarrollo de
+                    aplicaciones y la creación de soluciones de software,
+                    fortaleciendo mis conocimientos mediante proyectos
+                    académicos y prácticas de programación.
+                </p>
+
+            </section>
+
+            <!-- PROYECTOS -->
+            <section class="proyectos card">
+
+                <h2>Proyectos destacados</h2>
+
+                <div class="proyectos-flex">
+
+                    <article class="proyecto">
+
+                        <header class="proyecto-head">
+
+                            <h3>Gestor de Prestamos y Insumos</h3>
+
+                            <div class="proyecto-links">
+
+                                <a
+                                    target="_blank"
+                                    rel="noopener"
+                                    href="TU_URL_GITHUB_PROYECTO"
+                                >
+                                    Código
+                                </a>
+
+                                <a
+                                    target="_blank"
+                                    rel="noopener"
+                                    href="TU_URL_DEMO"
+                                >
+                                    Demo
+                                </a>
+
+                            </div>
+
+                        </header>
+
+                        <p>
+                            Proyecto académico de un gestor de prestamos,
+                            utilizando Java, Java Swing y una base de datos en My SQL.
+                        </p>
+
+                        <p class="rol">
+                            <strong>Rol:</strong> Desarrollador
+                        </p>
+
+                        <p class="tech">
+                            <strong>Tecnologías:</strong> Java, Java Swing,
+                            MariaDB, Git y GitHub
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- EXPERIENCIA -->
+            <section class="experiencia card">
+
+                <h2>Experiencia</h2>
+
+                <ul class="timeline">
+
+                    <li>
+
+                        <div class="item">
+
+                            <h3>
+                                Estudiante — Universidad Tecnológica de Panamá
+                            </h3>
+
+                            <span class="meta">
+                                2024 — Actualidad
+                            </span>
+
+                            <p>
+                                Desarrollo de proyectos académicos relacionados
+                                con programación, estructuras de datos,
+                                desarrollo de software, bases de datos y
+                                control de versiones con Git y GitHub.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <!-- EDUCACIÓN -->
+            <section class="educacion card">
+
+                <h2>Educación</h2>
+
+                <ul class="listado-simple">
+
+                    <li>
+                        <strong>
+                            Licenciatura en Desarrollo y Gestión de Software
+                        </strong>
+                        — Universidad Tecnológica de Panamá, Centro Regional
+                        de Veraguas (2024–Actualidad)
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <!-- CERTIFICACIONES -->
+            <section class="certificaciones card">
+
+                <h2>Certificaciones y Cursos</h2>
+
+                <ul class="listado-simple">
+
+                    <li>
+                        Cursos y laboratorios académicos relacionados con
+                        desarrollo de software.
+                    </li>
+
+                    <li>
+                        Prácticas de Git y GitHub para control de versiones.
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <!-- INFORMACIÓN EXTRA -->
+            <section class="extra card">
+
+                <h2>Logros · Artículos · Intereses</h2>
+
+                <ul class="listado-simple">
+
+                    <li>
+                        Desarrollo de proyectos académicos utilizando
+                        diferentes lenguajes y herramientas de programación.
+                    </li>
+
+                    <li>
+                        Interés en el desarrollo de software, programación y
+                        tecnologías relacionadas con sistemas de información.
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="footer">
+
+            <small>
+                © 2024 Universidad Tecnológica de Panamá · Centro Regional
+                de Veraguas · Lic. en Desarrollo y Gestión de Software
+            </small>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
