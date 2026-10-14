@@ -1,0 +1,163 @@
+<!-- file: site/alumnos/bethancourt-fernando/about-bethancourt-fernando.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fernando Bethancourt — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-bethancourt-fernando.css" />
+
+    <!-- Descripción breve (práctica de metadatos/SEO) -->
+    <meta
+      name="description"
+      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+    <div class="page-grid">
+      <header class="header">
+        <div class="titulos">
+          <!-- Navegación mínima (breadcrumb) -->
+          <div class="top-actions">
+            <nav class="tabs-left" aria-label="Navegación">
+              <a href="../../index.html" class="tab-link is-active">
+                <span class="ico" aria-hidden="true">&#8962;</span>
+                <span class="label">Inicio</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- Nombre y tagline -->
+          <h1 class="nombre">Fernando Bethancourt</h1>
+          <p class="tagline">Estudiante de Licenciatura en Desarrollo y Gestión de Software</p>
+        </div>
+
+        <!-- Logos institucionales -->
+        <div class="logos">
+          <img
+            class="logo"
+            src="../../assets/img/logo-utp.svg"
+            alt="Logo UTP"
+          />
+          <img
+            class="logo"
+            src="../../assets/img/logo-fisc.svg"
+            alt="Logo FISC"
+          />
+        </div>
+      </header>
+
+      <!-- Columna izquierda (foto + contacto + habilidades) -->
+      <aside class="sidebar">
+        <figure class="perfil">
+          <img
+            src="./assets/img/foto-bethancourt-fernando-480.webp"
+            srcset="
+              ./assets/img/foto-bethancourt-fernando-160.webp 160w,
+              ./assets/img/foto-bethancourt-fernando-320.webp 320w,
+              ./assets/img/foto-bethancourt-fernando-480.webp 480w,
+              ./assets/img/foto-bethancourt-fernando-640.webp 640w
+            "
+            sizes="(max-width: 700px) 128px, 160px"
+            alt="Fernando Bethancourt, estudiante de LDGS UTP FISC Veraguas"
+            width="160"
+            height="160"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            Licenciatura en Desarrollo y Gestión de Software
+          </figcaption>
+        </figure>
+
+        <section class="contacto card">
+          <h2>Contacto</h2>
+          <ul class="lista-contacto">
+            <li>
+              <a href="mailto:fernando.bethancourt@utp.ac.pa">fernando.bethancourt@utp.ac.pa</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Habilidades adaptadas a tus lenguajes y programas -->
+        <section class="skills card">
+          <h2>Habilidades</h2>
+
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">Java</span>
+            <span class="chip">SQL</span>
+          </div>
+
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span class="chip">MySQL</span>
+          </div>
+
+          <h3>Herramientas & Entornos</h3>
+          <div class="chips">
+            <span class="chip">NetBeans</span>
+            <span class="chip">Git</span>
+            <span class="chip">VS Code</span>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna derecha (contenido principal) -->
+      <main class="contenido">
+        <section class="resumen card">
+          <h2>Acerca de mí</h2>
+          <p>
+            Soy estudiante de segundo año de la carrera de Licenciatura en Desarrollo y Gestión de Software en la Universidad Tecnológica de Panamá.
+          </p>
+        </section>
+
+        <section class="proyectos card">
+          <h2>Proyectos destacados</h2>
+          <div class="proyectos-flex">
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>Proyectos Académicos</h3>
+              </header>
+              <p>Actualmente en desarrollo de proyectos universitarios académicos y prácticas de laboratorio.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="experiencia card">
+          <h2>Experiencia</h2>
+          <ul class="timeline">
+            <li>
+              <div class="item">
+                <h3>Líder en Gobierno Estudiantil — Bachillerato</h3>
+                <p>Experiencia en liderazgo estudiantil, coordinación y trabajo en equipo durante los años de bachillerato.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="educacion card">
+          <h2>Educación</h2>
+          <ul class="listado-simple">
+            <li>
+              <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
+              — UTP, Centro Regional de Veraguas (2.° Año)
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>
+          © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+          · Lic. en Desarrollo y Gestión de Software
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
