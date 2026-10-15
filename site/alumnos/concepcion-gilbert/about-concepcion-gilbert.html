@@ -1,4 +1,4 @@
-<!-- file: site/alumnos/apellidos-nombre/about-apellidos-nombre.html -->
+<!-- file: site/alumnos/concepcion-gilbert/about-concepcion-gilbert.html -->
 <!--
   PLANTILLA DE PERFIL — HTML
   ──────────────────────────────────────────────────────────────
@@ -24,10 +24,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Nombre Apellidos — Perfil</title>
+    <title>Gilbert Concepcion — Perfil</title>
 
     <!-- CSS específico de esta página -->
-    <link rel="stylesheet" href="./assets/css/about-apellidos-nombre.css" />
+   <link rel="stylesheet" href="./assets/css/about-concepcion-gilbert.css" />
 
     <!-- Descripción breve (práctica de metadatos/SEO) -->
     <meta
@@ -51,8 +51,8 @@
           </div>
 
           <!-- EDITA: nombre y tagline -->
-          <h1 class="nombre">Nombre Apellidos</h1>
-          <p class="tagline">Título profesional o especialización</p>
+          <h1 class="nombre">Gilbert Concepcion</h1>
+          <p class="tagline">Desarrollador Junior de Software</p>
         </div>
 
         <!-- Logos institucionales (no cambiar rutas) -->
@@ -73,21 +73,22 @@
       <!-- Columna izquierda (foto + contacto + habilidades) -->
       <aside class="sidebar">
         <figure class="perfil">
-          <img
-            src="./assets/img/foto-apellidos-nombre-480.webp"
+           <img
+            src="./assets/img/foto-concepcion-gilbert-320.webp"
             srcset="
-              ./assets/img/foto-apellidos-nombre-160.webp 160w,
-              ./assets/img/foto-apellidos-nombre-320.webp 320w,
-              ./assets/img/foto-apellidos-nombre-480.webp 480w,
-              ./assets/img/foto-apellidos-nombre-640.webp 640w
+              ./assets/img/foto-concepcion-gilbert-160.webp 160w,
+              ./assets/img/foto-concepcion-gilbert-320.webp 320w,
+              ./assets/img/foto-concepcion-gilbert-480.webp 480w,
+              ./assets/img/foto-concepcion-gilbert-640.webp 640w
             "
             sizes="(max-width: 700px) 128px, 160px"
-            alt="Nombre Apellidos, estudiante de LDGS UTP FISC Veraguas"
+            alt="Gilbert Concepción, estudiante de LDGS UTP FISC Veraguas"
             width="160"
             height="160"
             loading="lazy"
             decoding="async"
           />
+
           <figcaption>
             Licenciatura en Desarrollo y Gestión de Software
           </figcaption>
@@ -97,19 +98,18 @@
           <h2>Contacto</h2>
           <ul class="lista-contacto">
             <li>
-              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+              <a href="mailto:gilbert.concepcion@utp.ac.pa">gilbert.concepcion@utp.ac.pa</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener" href="{{LINKEDIN}}">LinkedIn</a>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/gilbert-concepción-2469b2443/">LinkedIn</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener" href="{{GITHUB}}">GitHub</a>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener" href="{{PORTAFOLIO}}">Portafolio</a>
+              <a target="_blank" rel="noopener" href="https://github.com/gilbertcomcepcion189-commits">GitHub</a>
             </li>
           </ul>
         </section>
+
+
 
         <!-- Añade o quita chips según tus tecnologías reales -->
         <section class="skills card">
@@ -118,45 +118,52 @@
           <h3>Lenguajes</h3>
           <div class="chips">
             <span class="chip">Java</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">Python</span>
+            <span class="chip">C#</span>
+            <span class="chip">C++</span>
             <span class="chip">SQL</span>
           </div>
 
           <h3>Frameworks & Librerías</h3>
           <div class="chips">
             <span class="chip">Spring Boot</span>
-            <span class="chip">React</span>
-            <span class="chip">Node.js</span>
+            <span class="chip">Hibernate</span>
           </div>
 
           <h3>Bases de datos</h3>
           <div class="chips">
             <span class="chip">MySQL</span>
-            <span class="chip">PostgreSQL</span>
+            <span class="chip">Microsoft Access</span>
           </div>
 
           <h3>Herramientas</h3>
           <div class="chips">
             <span class="chip">Git</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Postman</span>
+            <span class="chip">NetBeans</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Visual Studio Community</span>
             <span class="chip">Figma</span>
           </div>
+
+          <h3>Plataformas Cloud & Monitoreo</h3>
+          <div class="chips">
+            <span class="chip">Microsoft Azure</span>
+            <span class="chip">Dynatrace</span>
+          </div>
+
 
           <h3>Metodologías</h3>
           <div class="chips">
             <span class="chip">Scrum</span>
-            <span class="chip">Kanban</span>
+            <span class="chip">Cascada</span>
           </div>
         </section>
       </aside>
 
-      <!-- Columna derecha (contenido principal) -->
+         <!-- Columna derecha (contenido principal) -->
       <main class="contenido">
         <section class="resumen card">
           <h2>Acerca de mí</h2>
-          <p>{{RESUMEN_BREVE_ELEVATOR_PITCH}}</p>
+          <p>Estudiante de Desarrollo de Software interesado en la programación web, bases de datos y la administración eficiente de versiones con Git y GitHub.</p>
         </section>
 
         <!-- Duplica <article.proyecto> por cada proyecto -->
@@ -165,27 +172,27 @@
           <div class="proyectos-flex">
             <article class="proyecto">
               <header class="proyecto-head">
-                <h3>{{NOMBRE_PROYECTO}}</h3>
+                <h3>UniSport</h3>
                 <div class="proyecto-links">
-                  <a target="_blank" rel="noopener" href="{{URL_GITHUB}}">Código</a>
-                  <a target="_blank" rel="noopener" href="{{URL_DEMO}}">Demo</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/gilbertcomcepcion189-commits/UniSport">Código</a>
                 </div>
               </header>
-              <p>{{DESCRIPCION_PROYECTO}}</p>
-              <p class="rol"><strong>Rol:</strong> {{ROL}}</p>
-              <p class="tech"><strong>Tecnologías:</strong> {{TECNOLOGIAS}}</p>
+              <p>Página web deportiva interactiva desarrollada en HTML, diseñada para la gestión, visualización y seguimiento de actividades y contenido relacionado con el ámbito de los deportes universitarios.</p>
+              <p class="rol"><strong>Rol:</strong> Desarrollador Frontend</p>
+              <p class="tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
             </article>
           </div>
         </section>
+
 
         <section class="experiencia card">
           <h2>Experiencia</h2>
           <ul class="timeline">
             <li>
               <div class="item">
-                <h3>{{CARGO}} — {{ORGANIZACION}}</h3>
-                <span class="meta">{{FECHA}}</span>
-                <p>{{RESPONSABILIDADES_LOGROS}}</p>
+                <h3>Soporte Técnico (Práctica Profesional) — MIDA</h3>
+                <span class="meta">2023</span>
+                <p>Realización de mantenimiento preventivo y correctivo de equipos de cómputo, instalación y configuración de sistemas, y mantenimiento físico de impresoras. Gestión y resolución de incidencias técnicas mediante la creación de tickets de soporte e informes semanales de actividades. Configuración de infraestructura de red local a través del ponchado de cables RJ-45 e instalación de nodos de red.</p>
               </div>
             </li>
           </ul>
@@ -196,26 +203,30 @@
           <ul class="listado-simple">
             <li>
               <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
-              — UTP, Centro Regional de Veraguas ({{ANIO_INICIO}}–{{ANIO_FIN}})
+              — UTP, Centro Regional de Veraguas (2024-2028)
             </li>
           </ul>
         </section>
 
-        <section class="certificaciones card">
+
+      <section class="certificaciones card">
           <h2>Certificaciones y Cursos</h2>
           <ul class="listado-simple">
-            <li>{{CERTIFICACION_1}}</li>
-            <li>{{CURSO_1}}</li>
+            <li>Dynatrace Associate Certification — Dynatrace</li>
+            <li>Seminario de Tecnología y Ciberseguridad — DOJOConf Panamá</li>
+            <li>Capacitación en Soporte Técnico y Mantenimiento de Equipos — MIDA 2023</li>
           </ul>
         </section>
 
-        <section class="extra card">
+      <section class="extra card">
           <h2>Logros · Artículos · Intereses</h2>
           <ul class="listado-simple">
-            <li>{{LOGRO_O_ARTICULO}}</li>
+            <li><strong>Logro destacable:</strong> Participante de la Hackathon Copa Airlines 2026.</li>
+            <li>Interés en la administración de redes locales y soluciones en la nube con Microsoft Azure.</li>
           </ul>
         </section>
       </main>
+
 
       <footer class="footer">
         <small>
