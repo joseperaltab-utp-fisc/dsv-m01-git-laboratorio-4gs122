@@ -1,0 +1,191 @@
+<!-- file: site/alumnos/barba-isaac/about-barba-isaac.html -->
+<!--
+  PLANTILLA DE PERFIL — HTML
+  ──────────────────────────────────────────────────────────────
+  ESTA ES LA PLANTILLA. No la edites: copia la carpeta completa
+  site/alumnos/apellidos-nombre/ y renómbrala con tus datos.
+
+  Qué editar en tu copia:
+    • Este comentario de la primera línea (la ruta debe ser la tuya).
+    • El <title> y el <link> a tu hoja de estilos.
+    • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
+    • Las cuatro rutas de la fotografía (src y srcset).
+  Qué NO cambiar:
+    • Estructura (header / aside / main / footer).
+    • Rutas a los logos institucionales (../../assets/img/).
+
+  Nombres de archivo de tu copia, si te llamas Juan Pérez:
+    about-perez-juan.html
+    assets/css/about-perez-juan.css
+    assets/img/foto-perez-juan-{160,320,480,640}.webp
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Isaac Barba — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-barba-isaac.css" />
+
+    <!-- Descripción breve (práctica de metadatos/SEO) -->
+    <meta
+      name="description"
+      content="Perfil de estudiante Isaac Barba — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+    <div class="page-grid">
+      <header class="header">
+        <div class="titulos">
+          <!-- Navegación mínima (breadcrumb). Puedes añadir más tabs si el profe lo pide -->
+          <div class="top-actions">
+            <nav class="tabs-left" aria-label="Navegación">
+              <a href="../../index.html" class="tab-link is-active">
+                <span class="ico" aria-hidden="true">&#8962;</span>
+                <span class="label">Inicio</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- EDITA: nombre y tagline -->
+          <h1 class="nombre">Isaac Barba</h1>
+          <p class="tagline">Lic. Desarrollo y Gestión de software</p>
+        </div>
+
+        <!-- Logos institucionales (no cambiar rutas) -->
+        <div class="logos">
+          <img
+            class="logo"
+            src="../../assets/img/logo-utp.svg"
+            alt="Logo UTP"
+          />
+          <img
+            class="logo"
+            src="../../assets/img/logo-fisc.svg"
+            alt="Logo FISC"
+          />
+        </div>
+      </header>
+
+      <!-- Columna izquierda (foto + contacto + habilidades) -->
+      <aside class="sidebar">
+        <figure class="perfil">
+          <img
+  src="./assets/img/foto-barba-isaac-480.webp"
+  srcset="
+    ./assets/img/foto-barba-isaac-160.webp 160w,
+    ./assets/img/foto-barba-isaac-320.webp 320w,
+    ./assets/img/foto-barba-isaac-480.webp 480w,
+    ./assets/img/foto-barba-isaac-640.webp 640w
+  "
+  sizes="(max-width: 700px) 128px, 160px"
+  alt="Isaac Barba, estudiante de LDGS UTP FISC Veraguas"
+  width="160"
+  height="160"
+  loading="lazy"
+  decoding="async"
+          />
+          <figcaption>
+            Licenciatura en Desarrollo y Gestión de Software
+          </figcaption>
+        </figure>
+
+        <section class="contacto card">
+          <h2>Contacto</h2>
+          <ul class="lista-contacto">
+            <li>
+              <a href="mailto: isaac.barba@utp.ac.pa">isaac.barba@utp.ac.pa</a>
+            </li>
+           
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/isaac-barba">GitHub</a>
+            </li>
+        
+          </ul>
+        </section>
+
+        <!-- Añade o quita chips según tus tecnologías reales -->
+        <section class="skills card">
+          <h2>Habilidades</h2>
+
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">C</span>
+            <span class="chip">C#</span>
+            <span class="chip">SQL</span>
+            <span class="chip">C++</span>
+          </div>
+
+          <h3>Frameworks & Librerías</h3>
+          <div class="chips">
+            <span class="chip">Spring Boot</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+          </div>
+
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span class="chip">MySQL</span>
+            <span class="chip">PostgreSQL</span>
+          </div>
+
+          <h3>Herramientas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">Microsoft 360</span>
+            <span class="chip">Canva</span>
+            <span class="chip">Figma</span>
+          </div>
+
+          
+        </section>
+      </aside>
+
+      <!-- Columna derecha (contenido principal) -->
+      <main class="contenido">
+        <section class="resumen card">
+          <h2>Acerca de mí</h2>
+          <p> Estudiante de desarrollo y gestión de software con alta capacidad de aprendizaje y una
+actitud optimista. Poseo habilidades destacadas en comunicación interpersonal y atención
+al cliente. Me caracterizo por mi responsabilidad en el cumplimiento de asignaciones y mi
+entusiasmo por iniciar mi trayectoria laboral aportando valor y eficiencia a la organización.</p>
+        </section>
+
+        <!-- Duplica <article.proyecto> por cada proyecto -->
+        <section class="proyectos card">
+          <h2>Proyectos destacados</h2>
+          <div class="proyectos-flex">
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>Proyecto de gestión de mascotas en ingeniería de software </h3>
+                <div class="proyecto-links">
+              </header>
+              <p>Se tratará de un sistema que ayudará a las personas y a casas de refigio de animales a poder localizar con mayor comididad a todos os animales que tienen disponible</p>
+              <p class="rol"><strong>Rol:</strong>Desarrollador</p>
+              <p class="tech"><strong>Tecnologías:</strong> Java, SQL</p>
+            </article>
+          </div>
+        </section>
+       <section class="proyectos card">
+         <h2> Educación</h2>
+         <ul class="listado-simple">
+           <li>Licenciatura en Desarrollo y Gestión de Software <strong>
+            - UTP, centro Regional de Veraguas (2024 - presente) </li>
+         </ul>
+           </strong>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+          · Lic. en Desarrollo y Gestión de Software
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
