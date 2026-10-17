@@ -1,0 +1,236 @@
+<!-- file: site/alumnos/guevara-jason/about-guevara-jason.html -->
+<!--
+  PLANTILLA DE PERFIL — HTML
+  ──────────────────────────────────────────────────────────────
+  ESTA ES LA PLANTILLA. No la edites: copia la carpeta completa
+  site/alumnos/apellidos-nombre/ y renómbrala con tus datos.
+
+  Qué editar en tu copia:
+    • Este comentario de la primera línea (la ruta debe ser la tuya).
+    • El <title> y el <link> a tu hoja de estilos.
+    • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
+    • Las cuatro rutas de la fotografía (src y srcset).
+  Qué NO cambiar:
+    • Estructura (header / aside / main / footer).
+    • Rutas a los logos institucionales (../../assets/img/).
+
+  Nombres de archivo de tu copia, si te llamas Juan Pérez:
+    about-perez-juan.html
+    assets/css/about-perez-juan.css
+    assets/img/foto-perez-juan-{160,320,480,640}.webp
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Jason Guevara — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-guevara-jason.css" />
+
+    <!-- Descripción breve (práctica de metadatos/SEO) -->
+    <meta
+      name="description"
+      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+    <div class="page-grid">
+      <header class="header">
+        <div class="titulos">
+          <!-- Navegación mínima (breadcrumb). Puedes añadir más tabs si el profe lo pide -->
+          <div class="top-actions">
+            <nav class="tabs-left" aria-label="Navegación">
+              <a href="../../index.html" class="tab-link is-active">
+                <span class="ico" aria-hidden="true">&#8962;</span>
+                <span class="label">Inicio</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- EDITA: nombre y tagline -->
+          <h1 class="nombre">Jason Guevara</h1>
+          <p class="tagline">Futuro desarrollador de software con interés en el desarrollo web y bases de datos.</p>
+        </div>
+
+        <!-- Logos institucionales (no cambiar rutas) -->
+        <div class="logos">
+          <img
+            class="logo"
+            src="../../assets/img/logo-utp.svg"
+            alt="Logo UTP"
+          />
+          <img
+            class="logo"
+            src="../../assets/img/logo-fisc.svg"
+            alt="Logo FISC"
+          />
+        </div>
+      </header>
+
+      <!-- Columna izquierda (foto + contacto + habilidades) -->
+      <aside class="sidebar">
+        <figure class="perfil">
+          <img
+            src="./assets/img/foto-guevara-jason-480.webp"
+            srcset="
+              ./assets/img/foto-guevara-jason-160.webp 160w,
+              ./assets/img/foto-guevara-jason-320.webp 320w,
+              ./assets/img/foto-guevara-jason-480.webp 480w,
+              ./assets/img/foto-guevara-jason-640.webp 640w
+            "
+            sizes="(max-width: 700px) 128px, 160px"
+            alt="Jason Guevara, estudiante de LDGS UTP FISC Veraguas"
+            width="160"
+            height="160"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            Licenciatura en Desarrollo y Gestión de Software
+          </figcaption>
+        </figure>
+
+        <section class="contacto card">
+          <h2>Contacto</h2>
+          <ul class="lista-contacto">
+            <li>
+              <a href="mailto:jason.guevara@utp.ac.pa">jason.guevara@utp.ac.pa</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/jason-guevara-744788286/">LinkedIn</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/jason-guevara">GitHub</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Añade o quita chips según tus tecnologías reales -->
+        <section class="skills card">
+          <h2>Habilidades</h2>
+
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">SQL</span>
+            <span class="chip">C# C charp</span>
+            <span class="chip">C++</span>
+            <span class="chip">My SQL</span>
+          </div>
+
+          <h3>Frameworks & Librerías</h3>
+          <div class="chips">
+            <span class="chip">Spring Boot</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+          </div>
+
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span class="chip">MySQL</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Maria DB</span>
+            <span class="chip">Mongo DB</span>
+          </div>
+
+          <h3>Herramientas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">Figma</span>
+          </div>
+
+          <h3>Metodologías</h3>
+          <div class="chips">
+            <span class="chip">Scrum</span>
+            <span class="chip">Kanban</span>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna derecha (contenido principal) -->
+      <main class="contenido">
+        <section class="resumen card">
+          <h2>Acerca de mí</h2>
+          <p>Bachiller en Tecnología y estudiante universitario de Desarrollo de Software. Soy una persona dinámica,
+            responsable y con gran capacidad para el trabajo en equipo y el aprendizaje rápido. Poseo habilidades para
+            la organización lógica, el manejo de inventarios y el uso eficiente de herramientas tecnológicas. Me distingo
+            por mi puntualidad, compromiso y una actitud proactiva orientada a mantener el orden y la eficiencia en el entorno laboral.</p>
+        </section>
+
+        <!-- Duplica <article.proyecto> por cada proyecto -->
+        <section class="proyectos card">
+          <h2>Proyectos destacados</h2>
+          <div class="proyectos-flex">
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>Sistema CPEL</h3>
+                <div class="proyecto-links">
+                  <a target="_blank" rel="noopener" href="{{URL_GITHUB}}">Código</a>
+                  <a target="_blank" rel="noopener" href="{{URL_DEMO}}">Demo</a>
+                </div>
+              </header>
+              <p>Aplicación de escritorio en Java (Swing) que gestiona préstamos, devoluciones, usuarios, equipos e insumos 
+                de laboratorio, delegando las reglas de negocio pesadas a triggers de MariaDB y limitando el código Java a INSERT/DELETE controlados.</p>
+              <p class="rol"><strong>Rol:</strong> Desarrollador Back-End</p>
+              <p class="tech"><strong>Tecnologías:</strong> Java, Maria DB,Xampp.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="experiencia card">
+          <h2>Experiencia</h2>
+          <ul class="timeline">
+            <li>
+              <div class="item">
+                <h3>Practicante — Departamento de Tecnología (TI)</h3>
+                <span class="meta">2023</span>
+                <h3>Respnsabilidades y logros</h3>
+                <p>• Brindar Soporte Técnico - Asistir a los usuarios en la configuración de equipos, instalación de aplicaciones 
+                  corporativas y gestión de accesos al sistema. </p>
+                <p>• Gestionar la Infraestructura - Colaborar en el mantenimiento preventivo de los equipos 
+                  informáticos, servidores locales y el inventario de activos tecnológicos de la empresa.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="educacion card">
+          <h2>Educación</h2>
+          <ul class="listado-simple">
+            <li>
+              <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
+              — UTP, Centro Regional de Veraguas (2024–2028)
+            </li>
+          </ul>
+        </section>
+
+       <!--<section class="certificaciones card">
+          <h2>Certificaciones y Cursos</h2>
+          <ul class="listado-simple">
+            <li>{{CERTIFICACION_1}}</li>
+            <li>{{CURSO_1}}</li>
+          </ul>
+        </section> -->
+
+        <section class="extra card">
+          <h2>Logros · Artículos · Intereses</h2>
+          <ul class="listado-simple">
+            <li>Logros académicos: Participación destacada en proyectos semestrales de desarrollo de software y gestión de tecnologías.</li>
+              <li>Experiencia práctica: Colaboración como practicante en el Departamento de Tecnología (TI), brindando soporte técnico y mantenimiento de infraestructura informática.</li>
+              <li>Intereses: Apasionado por el desarrollo web, la optimización de bases de datos y la constante actualización en nuevas tecnologías de programación.</li>
+            </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>
+          © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+          · Lic. en Desarrollo y Gestión de Software
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
