@@ -12,23 +12,23 @@
    Todo el sitio lee de estas variables (no busques colores sueltos). */
 :root {
   /* Fondos (tintos muy claros) */
-  --bg-50: #f8fbff;
-  --bg-100: #eff6ff;
-  --bg-aqua-100: #e0f2fe;   /* azul claro */
-  --bg-indigo-100: #e0e7ff; /* índigo claro */
+  --bg-50: #fdf8ff;
+  --bg-100: #fdefff;
+  --bg-aqua-100: #f5e0fe;   /* azul claro */
+  --bg-indigo-100: #f9e0ff; /* índigo claro */
 
   /* Marca / énfasis (gama verdosa/teal) */
-  --brand-500: #3a9986;
-  --brand-600: #3a8d9a;
-  --brand-700: #3a6e99;
+  --brand-500: #793a99;
+  --brand-600: #8d3a9a;
+  --brand-700: #6e3a99;
 
   /* Tipografía y superficies */
-  --ink-900: #2c3e50;  /* texto principal */
-  --ink-700: #546a7d;  /* texto secundario */
+  --ink-900: #482c50;  /* texto principal */
+  --ink-700: #71547d;  /* texto secundario */
   --card:    #ffffff;  /* superficie (tarjetas / contenedores) */
 
   /* Accesorios derivados */
-  --border-soft: rgba(58, 141, 154, 0.18); /* borde sutil ligado a brand */
+  --border-soft: rgba(120, 58, 154, 0.18); /* borde sutil ligado a brand */
   --shadow-1:    0 10px 25px rgba(2, 6, 23, 0.08), 0 2px 6px rgba(2, 6, 23, 0.04);
 }
 

@@ -27,7 +27,7 @@
     <title>Nombre Apellidos — Perfil</title>
 
     <!-- CSS específico de esta página -->
-    <link rel="stylesheet" href="./assets/css/about-apellidos-nombre.css" />
+    <link rel="stylesheet" href="./assets/css/about-penalba-aaron.css" />
 
     <!-- Descripción breve (práctica de metadatos/SEO) -->
     <meta
@@ -51,8 +51,8 @@
           </div>
 
           <!-- EDITA: nombre y tagline -->
-          <h1 class="nombre">Nombre Apellidos</h1>
-          <p class="tagline">Título profesional o especialización</p>
+          <h1 class="nombre">Aarón Peñalba</h1>
+          <p class="tagline">Estudiante de Lic. Desarrollo y Gestión de Software</p>
         </div>
 
         <!-- Logos institucionales (no cambiar rutas) -->
@@ -74,15 +74,15 @@
       <aside class="sidebar">
         <figure class="perfil">
           <img
-            src="./assets/img/foto-apellidos-nombre-480.webp"
+            src="./assets/img/foto-penalba-aaron-480.webp"
             srcset="
-              ./assets/img/foto-apellidos-nombre-160.webp 160w,
-              ./assets/img/foto-apellidos-nombre-320.webp 320w,
-              ./assets/img/foto-apellidos-nombre-480.webp 480w,
-              ./assets/img/foto-apellidos-nombre-640.webp 640w
+              ./assets/img/foto-penalba-aaron-160.webp 160w,
+              ./assets/img/foto-penalba-aaron-320.webp 320w,
+              ./assets/img/foto-penalba-aaron-480.webp 480w,
+              ./assets/img/foto-penalba-aaron-640.webp 640w
             "
             sizes="(max-width: 700px) 128px, 160px"
-            alt="Nombre Apellidos, estudiante de LDGS UTP FISC Veraguas"
+            alt="Aarón Peñalba, estudiante de LDGS UTP FISC Veraguas"
             width="160"
             height="160"
             loading="lazy"
@@ -97,16 +97,13 @@
           <h2>Contacto</h2>
           <ul class="lista-contacto">
             <li>
-              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+              <a href="mailto:aaron.penalba@utp.ac.pa">aaron.penalba@utp.ac.pa</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener" href="{{LINKEDIN}}">LinkedIn</a>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/aar%C3%B3n-epg-507pty/">LinkedIn</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener" href="{{GITHUB}}">GitHub</a>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener" href="{{PORTAFOLIO}}">Portafolio</a>
+              <a target="_blank" rel="noopener" href="https://github.com/Aaron10-utp">GitHub</a>
             </li>
           </ul>
         </section>
@@ -119,28 +116,22 @@
           <div class="chips">
             <span class="chip">Java</span>
             <span class="chip">JavaScript</span>
-            <span class="chip">Python</span>
             <span class="chip">SQL</span>
           </div>
 
           <h3>Frameworks & Librerías</h3>
           <div class="chips">
-            <span class="chip">Spring Boot</span>
-            <span class="chip">React</span>
-            <span class="chip">Node.js</span>
+            <span class="chip">ASP.NET Core</span>
           </div>
 
           <h3>Bases de datos</h3>
           <div class="chips">
             <span class="chip">MySQL</span>
-            <span class="chip">PostgreSQL</span>
           </div>
 
           <h3>Herramientas</h3>
           <div class="chips">
             <span class="chip">Git</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Postman</span>
             <span class="chip">Figma</span>
           </div>
 
@@ -156,7 +147,7 @@
       <main class="contenido">
         <section class="resumen card">
           <h2>Acerca de mí</h2>
-          <p>{{RESUMEN_BREVE_ELEVATOR_PITCH}}</p>
+          <p>Soy una persona responsable, perseverante y disciplinada, comprometida con mi crecimiento personal y profesional. Me caracterizo por asumir mis responsabilidades con seriedad, esforzarme por alcanzar mis metas y mantener una actitud constante ante los retos. Tengo un gran interés por las artes marciales, una disciplina que forma parte de mis intereses y que se relaciona con valores como el respeto, la constancia y la superación personal. Procuro dar lo mejor de mí en cada actividad que realizo, aprender de cada experiencia y seguir desarrollando mis habilidades para crecer tanto en el ámbito profesional como en el personal.</p>
         </section>
 
         <!-- Duplica <article.proyecto> por cada proyecto -->
@@ -165,30 +156,59 @@
           <div class="proyectos-flex">
             <article class="proyecto">
               <header class="proyecto-head">
-                <h3>{{NOMBRE_PROYECTO}}</h3>
-                <div class="proyecto-links">
+                <h3>Calculadora Binaria</h3>
+                <!--<div class="proyecto-links">
                   <a target="_blank" rel="noopener" href="{{URL_GITHUB}}">Código</a>
                   <a target="_blank" rel="noopener" href="{{URL_DEMO}}">Demo</a>
-                </div>
+                </div>-->
               </header>
-              <p>{{DESCRIPCION_PROYECTO}}</p>
-              <p class="rol"><strong>Rol:</strong> {{ROL}}</p>
-              <p class="tech"><strong>Tecnologías:</strong> {{TECNOLOGIAS}}</p>
+              <p>Realize una calculadora binaria con 2 modos de uso (Convertidor/Binario), en el modo de uso Convertidor,
+                 la calculadora convertida numero binario a decimales y viceversa.En el modo Binario, se encargaba de 
+                 realizar todas las operaciones aritmeticas con números binarios. </p>
+              <p class="rol"><strong>Rol:</strong> Creator</p>
+              <p class="tech"><strong>Tecnologías:</strong> C#</p>
             </article>
           </div>
         </section>
 
         <section class="experiencia card">
           <h2>Experiencia</h2>
-          <ul class="timeline">
+          
+          <u1 class="timeline">
             <li>
               <div class="item">
-                <h3>{{CARGO}} — {{ORGANIZACION}}</h3>
-                <span class="meta">{{FECHA}}</span>
-                <p>{{RESPONSABILIDADES_LOGROS}}</p>
+                <h3>Food Service Staff — PriceSmart</h3>
+                <span class="meta">5 Month</span>
+                <p>Elaboración de comidas preparadas de diversas tipos.
+                  Conocimiento en procesos de sanitizacion y manipúlación de alimentos.
+                  Atención al Cliente. 
+                </p>
               </div>
             </li>
-          </ul>
+          </u1>
+          <u2 class="timeline">
+            <li>
+              <div class="item">
+                <h4>Produce Staff — PriceSmart</h4>
+                <span class="meta">1 Month</span>
+                <p>Almacenamiento, Carga y descarga de frutas, verduras y congelados.
+                  Gestion de Inventarios y rotacion de mercancía.
+                  Atención al Cliente.
+                </p>
+              </div>
+            </li>
+          </u2>
+          <u3 class="timeline">
+            <li>
+              <div class="item">
+                <h5>Asistencia a Socios — PriceSmart</h5>
+                <span class="meta">2 Years</span>
+                <p>Almacenamiento, Carga y descarga de mercancia.
+                  Asistencia al cliente personalizada, enfocada en la optimización del espacio disponible
+                </p>
+              </div>
+            </li>
+          </u3>
         </section>
 
         <section class="educacion card">
@@ -196,23 +216,23 @@
           <ul class="listado-simple">
             <li>
               <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
-              — UTP, Centro Regional de Veraguas ({{ANIO_INICIO}}–{{ANIO_FIN}})
+              — UTP, Centro Regional de Veraguas (2024–Actualidad)
             </li>
           </ul>
         </section>
 
-        <section class="certificaciones card">
+        <!--<section class="certificaciones card">
           <h2>Certificaciones y Cursos</h2>
           <ul class="listado-simple">
             <li>{{CERTIFICACION_1}}</li>
             <li>{{CURSO_1}}</li>
           </ul>
-        </section>
+        </section>-->
 
         <section class="extra card">
           <h2>Logros · Artículos · Intereses</h2>
           <ul class="listado-simple">
-            <li>{{LOGRO_O_ARTICULO}}</li>
+            <li>Tecnologías - Artes marciales</li>
           </ul>
         </section>
       </main>
