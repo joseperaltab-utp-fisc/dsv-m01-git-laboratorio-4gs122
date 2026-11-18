@@ -1,0 +1,219 @@
+<!-- file: site/alumnos/apellidos-nombre/about-diaz-luis.html -->
+<!--
+  PLANTILLA DE PERFIL — HTML
+  ──────────────────────────────────────────────────────────────
+  ESTA ES LA PLANTILLA. No la edites: copia la carpeta completa
+  site/alumnos/apellidos-nombre/ y renómbrala con tus datos.
+
+  Qué editar en tu copia:
+    • Este comentario de la primera línea (la ruta debe ser la tuya).
+    • El <title> y el <link> a tu hoja de estilos.
+    • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
+    • Las cuatro rutas de la fotografía (src y srcset).
+  Qué NO cambiar:
+    • Estructura (header / aside / main / footer).
+    • Rutas a los logos institucionales (../../assets/img/).
+
+  Nombres de archivo de tu copia, si te llamas Juan Pérez:
+    about-perez-juan.html
+    assets/css/about-perez-juan.css
+    assets/img/foto-perez-juan-{160,320,480,640}.webp
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luis Diaz — Perfil</title>
+
+  <!-- CSS específico de esta página -->
+  <link rel="stylesheet" href="./assets/css/about-diaz-luis.css" />
+
+  <!-- Descripción breve (práctica de metadatos/SEO) -->
+  <meta name="description"
+    content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)" />
+</head>
+
+<body>
+  <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+  <div class="page-grid">
+    <header class="header">
+      <div class="titulos">
+        <!-- Navegación mínima (breadcrumb). Puedes añadir más tabs si el profe lo pide -->
+        <div class="top-actions">
+          <nav class="tabs-left" aria-label="Navegación">
+            <a href="../../index.html" class="tab-link is-active">
+              <span class="ico" aria-hidden="true">&#8962;</span>
+              <span class="label">Inicio</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- EDITA: nombre y tagline -->
+        <h1 class="nombre">Luis Diaz</h1>
+        <p class="tagline">Título profesional o especialización</p>
+      </div>
+
+      <!-- Logos institucionales (no cambiar rutas) -->
+      <div class="logos">
+        <img class="logo" src="../../assets/img/logo-utp.svg" alt="Logo UTP" />
+        <img class="logo" src="../../assets/img/logo-fisc.svg" alt="Logo FISC" />
+      </div>
+    </header>
+
+    <!-- Columna izquierda (foto + contacto + habilidades) -->
+    <aside class="sidebar">
+      <figure class="perfil">
+        <img src="./assets/img/foto-diaz-luis-480.webp" srcset="
+              ./assets/img/foto-diaz-luis-160.webp 160w,
+              ./assets/img/foto-diaz-luis-320.webp 320w,
+              ./assets/img/foto-diaz-luis-480.webp 480w,
+              ./assets/img/foto-diaz-luis-640.webp 640w
+            " sizes="(max-width: 700px) 128px, 160px" alt="Luis Diaz, estudiante de LDGS UTP FISC Veraguas" width="160"
+          height="160" loading="lazy" decoding="async" />
+        <figcaption>
+          Licenciatura en Desarrollo y Gestión de Software
+        </figcaption>
+      </figure>
+
+      <section class="contacto card">
+        <h2>Contacto</h2>
+        <ul class="lista-contacto">
+          <li>
+            <a href="mailto:luis.diaz5@utp.ac.pa">Email</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="{{LINKEDIN}}">LinkedIn</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="https://github.com/LuisDiaz55">GitHub</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="{{PORTAFOLIO}}">Portafolio</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Añade o quita chips según tus tecnologías reales -->
+      <section class="skills card">
+        <h2>Habilidades</h2>
+
+        <h3>Lenguajes</h3>
+        <div class="chips">
+          <span class="chip">Java</span>
+          <span class="chip">c++</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+        </div>
+
+        <h3>Frameworks & Librerías</h3>
+        <div class="chips">
+          <span class="chip">Spring Boot</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+        </div>
+
+        <h3>Bases de datos</h3>
+        <div class="chips">
+          <span class="chip">MySQL</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+
+        <h3>Herramientas</h3>
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">Figma</span>
+        </div>
+
+        <h3>Metodologías</h3>
+        <div class="chips">
+          <span class="chip">Scrum</span>
+          <span class="chip">Kanban</span>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Columna derecha (contenido principal) -->
+    <main class="contenido">
+      <section class="resumen card">
+        <h2>Acerca de mí</h2>
+        <p>Estudiante de Licenciatura en Desarrollo y Gestión de Software con interés en el desarrollo web y de
+          aplicaciones. Me gusta resolver problemas con código limpio, trabajar en equipo con metodologías ágiles y
+          aprender tecnologías nuevas.</p>
+      </section>
+
+      <!-- Duplica <article.proyecto> por cada proyecto -->
+      <section class="proyectos card">
+        <h2>Proyectos destacados</h2>
+        <div class="proyectos-flex">
+          <article class="proyecto">
+            <header class="proyecto-head">
+              <h3>Consentidos_122</h3>
+              <div class="proyecto-links">
+                <a target="_blank" rel="noopener" href="https://github.com/LuisDiaz55/Consentidos_122">Código</a>
+                <a target="_blank" rel="noopener" href="{{URL_DEMO}}">Demo</a>
+              </div>
+            </header>
+            <p>Desarrollo de una aplicación web para la gestión de mascotas, que permite llevar un registro de citas
+              veterinarias, vacunaciones, desparasitaciones, información del dueño, información de la mascota, etc.</p>
+            <p class="rol"><strong>Rol:</strong> Desarrollador</p>
+            <p class="tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="experiencia card">
+        <h2>Experiencia</h2>
+        <ul class="timeline">
+          <li>
+            <div class="item">
+              <h3>Pasante — Procaja (Prestamos)</h3>
+              <span class="meta">(07-2025 - 11-2025)</span>
+              <p>"Pasantía en Procaja Panamá, empresa de préstamos, donde apoyé en la gestión de la base de datos de
+                clientes con cuentas pendientes, manteniendo la información actualizada y organizada para facilitar el
+                seguimiento de cobros."
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="educacion card">
+        <h2>Educación</h2>
+        <ul class="listado-simple">
+          <li>
+            <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
+            — UTP, Centro Regional de Veraguas (2025 - 2028)
+          </li>
+        </ul>
+      </section>
+
+      <section class="certificaciones card">
+        <h2>Certificaciones y Cursos</h2>
+        <ul class="listado-simple">
+          <li>Fundamentos de Python e IA - Samsung Innovation Campus (2026)</li>
+          <li>COICIT (2025)</li>
+        </ul>
+      </section>
+
+      <section class="extra card">
+        <h2>Logros · Artículos · Intereses</h2>
+        <ul class="listado-simple">
+          <li>Participación en el hackathon universitario de la UTP (2026)</li>
+          <li>Desarrollo de proyectos académicos con Spring Boot y React</li>
+          <li>Interés en desarrollo web, bases de datos e inteligencia artificial aplicada</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>
+        © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+        · Lic. en Desarrollo y Gestión de Software
+      </small>
+    </footer>
+  </div>
+</body>
+
+</html>
